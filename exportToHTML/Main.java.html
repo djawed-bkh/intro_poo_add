@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(98,151,85); font-style: italic; }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(204,120,50); }
+.s3 { color: rgb(106,135,89); }
+.s4 { color: rgb(104,151,187); }
+.s5 { color: rgb(128,128,128); }
+</style>
+</head>
+<BODY BGCOLOR="#2b2b2b">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Main.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">/** 
+ * Created by djawed on 06/06/17. 
+ */</span><span class="s1"> 
+</span><span class="s2">public class </span><span class="s1">Main { 
+ 
+    </span><span class="s2">public static void </span><span class="s1">main(String[] args){ 
+        city ville= </span><span class="s2">new </span><span class="s1">city()</span><span class="s2">;</span><span class="s1"> 
+   city ville1= </span><span class="s2">new </span><span class="s1">city(</span><span class="s3">&quot;marseille&quot;</span><span class="s2">,</span><span class="s3">&quot;france&quot;</span><span class="s2">,</span><span class="s4">200</span><span class="s2">,</span><span class="s3">'a'</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+   city ville2= </span><span class="s2">new </span><span class="s1">city(</span><span class="s3">&quot;nice&quot;</span><span class="s2">,</span><span class="s3">&quot;france&quot;</span><span class="s2">,</span><span class="s4">2300</span><span class="s2">,</span><span class="s3">'b'</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+   System.out.print(</span><span class="s3">&quot;</span><span class="s2">\n</span><span class="s3"> ville =&quot;</span><span class="s1">+ville.getNomVille()+</span><span class="s3">&quot;nom pays&quot;</span><span class="s1">+ville.getNomPays()+</span><span class="s3">&quot;le nombre dhabitants&quot;</span><span class="s1">+ville.getnbHabitants()+</span><span class="s3">&quot;categorie&quot;</span><span class="s1">+ville.getcategorie())</span><span class="s2">;</span><span class="s1"> 
+        System.out.print(</span><span class="s3">&quot;</span><span class="s2">\n</span><span class="s3"> ville =&quot;</span><span class="s1">+ville1.getNomVille()+</span><span class="s3">&quot;nom pays&quot;</span><span class="s1">+ville1.getNomPays()+</span><span class="s3">&quot;le nombre dhabitants&quot;</span><span class="s1">+ville1.getnbHabitants()+</span><span class="s3">&quot;categorie&quot;</span><span class="s1">+ville1.getcategorie())</span><span class="s2">;</span><span class="s1"> 
+        System.out.print(</span><span class="s3">&quot;</span><span class="s2">\n</span><span class="s3"> ville =&quot;</span><span class="s1">+ville2.getNomVille()+</span><span class="s3">&quot;nom pays&quot;</span><span class="s1">+ville2.getNomPays()+</span><span class="s3">&quot;le nombre dhabitants&quot;</span><span class="s1">+ville2.getnbHabitants()+</span><span class="s3">&quot;categorie&quot;</span><span class="s1">+ville2.getcategorie())</span><span class="s2">;</span><span class="s1"> 
+        city inter=</span><span class="s2">new </span><span class="s1">city()</span><span class="s2">;</span><span class="s1"> 
+        inter=ville1</span><span class="s2">;</span><span class="s1"> 
+        ville1=ville2</span><span class="s2">;</span><span class="s1"> 
+        ville2=inter</span><span class="s2">;</span><span class="s1"> 
+        System.out.print(</span><span class="s3">&quot;</span><span class="s2">\n</span><span class="s3"> ville =&quot;</span><span class="s1">+ville1.getNomVille()+</span><span class="s3">&quot;nom pays&quot;</span><span class="s1">+ville1.getNomPays()+</span><span class="s3">&quot;le nombre dhabitants&quot;</span><span class="s1">+ville1.getnbHabitants())</span><span class="s2">;</span><span class="s1"> 
+        System.out.print(</span><span class="s3">&quot;</span><span class="s2">\n</span><span class="s3"> ville =&quot;</span><span class="s1">+ville2.getNomVille()+</span><span class="s3">&quot;nom pays&quot;</span><span class="s1">+ville2.getNomPays()+</span><span class="s3">&quot;le nombre dhabitants&quot;</span><span class="s1">+ville2.getnbHabitants())</span><span class="s2">;</span><span class="s1"> 
+        ville1.setNomVille(</span><span class="s3">&quot;paris&quot;</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+        ville2.setNomVille(</span><span class="s3">&quot;tokyo&quot;</span><span class="s1">)</span><span class="s2">;</span><span class="s1"> 
+        System.out.print(</span><span class="s3">&quot;</span><span class="s2">\n</span><span class="s3"> ville =&quot;</span><span class="s1">+ville1.getNomVille()+</span><span class="s3">&quot;nom pays&quot;</span><span class="s1">+ville1.getNomPays()+</span><span class="s3">&quot;le nombre dhabitants&quot;</span><span class="s1">+ville1.getnbHabitants())</span><span class="s2">;</span><span class="s1"> 
+        System.out.print(</span><span class="s3">&quot;</span><span class="s2">\n</span><span class="s3"> ville =&quot;</span><span class="s1">+ville2.getNomVille()+</span><span class="s3">&quot;nom pays&quot;</span><span class="s1">+ville2.getNomPays()+</span><span class="s3">&quot;le nombre dhabitants&quot;</span><span class="s1">+ville2.getnbHabitants())</span><span class="s2">;</span><span class="s1"> 
+    } 
+ 
+ 
+ 
+ 
+ 
+}</span><span class="s5">/*class*/</span><span class="s1"> 
+</span></pre>
+</body>
+</html>
